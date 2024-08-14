@@ -112,11 +112,11 @@ class _ProgramSectionState extends State<ProgramSection>
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         ProgramCard(
-                          title: 'Fat Burnout',
+                          title: 'Burning Wolf',
                           description:
                               'An intensive program for burning fat effectively.',
                           titleColor: Colors.yellow,
-                          imagePath: 'assets/bulking_bear.png',
+                          imagePath: 'assets/fat_burning.png',
                         ),
                         ProgramCard(
                           title: 'Cutting Leopard',
