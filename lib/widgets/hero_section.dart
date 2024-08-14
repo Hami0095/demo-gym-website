@@ -10,14 +10,16 @@ class HeroSection extends StatelessWidget {
         Container(
           height: MediaQuery.of(context).size.height * 0.95,
           decoration: const BoxDecoration(
-              color: Colors.black,
-              image: DecorationImage(
-                image: AssetImage('gym_main.jpg'),
-                fit: BoxFit.fitWidth,
-              ),
-              borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(12),
-                  bottomRight: Radius.circular(12))),
+            color: Colors.black,
+            image: DecorationImage(
+              image: AssetImage('assets/gym_main.jpg'),
+              fit: BoxFit.fitWidth,
+            ),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(12),
+              bottomRight: Radius.circular(12),
+            ),
+          ),
         ),
         Positioned(
           bottom: 30,
