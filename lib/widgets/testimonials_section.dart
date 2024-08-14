@@ -93,8 +93,10 @@ class TestimonialCard extends StatelessWidget {
             children: [
               Text(
                 testimonial,
-                style:
-                    const TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
               const SizedBox(height: 10),
               Text(
