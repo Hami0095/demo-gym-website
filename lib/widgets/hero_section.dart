@@ -8,13 +8,16 @@ class HeroSection extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: MediaQuery.of(context).size.height * 0.8,
+          height: MediaQuery.of(context).size.height * 0.95,
           decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('gym_main.jpg'),
-              fit: BoxFit.cover,
-            ),
-          ),
+              color: Colors.black,
+              image: DecorationImage(
+                image: AssetImage('gym_main.jpg'),
+                fit: BoxFit.fitWidth,
+              ),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(12),
+                  bottomRight: Radius.circular(12))),
         ),
         Positioned(
           bottom: 30,
@@ -22,19 +25,20 @@ class HeroSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'DENO GYM',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 48,
-                  fontWeight: FontWeight.bold,
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.black87.withOpacity(0.25),
+                ),
+                child: const Text(
+                  'DENO GYM',
+                  style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 48,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Become a Member'),
-              ),
             ],
           ),
         ),

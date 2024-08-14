@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import '../widgets/navbar.dart';
 import '../widgets/hero_section.dart';
 import '../widgets/programs_section.dart';
-import '../widgets/why_choose_us_section.dart';
-import '../widgets/quote_section.dart';
 import '../widgets/testimonials_section.dart';
 import '../widgets/contact_section.dart';
 
@@ -13,6 +11,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(60.0),
         child: Navbar(),
@@ -22,9 +21,8 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             HeroSection(),
-            ProgramsSection(),
-            WhyChooseUsSection(),
-            QuoteSection(),
+            ProgramSection(),
+            // const QuoteSection(),
             TestimonialsSection(),
             ContactSection(),
           ],
