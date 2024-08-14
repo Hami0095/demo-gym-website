@@ -13,7 +13,7 @@ class DenoGymApp extends StatelessWidget {
     return MaterialApp(
       title: 'DENO GYM',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.black,
       ),
       home: const HomeScreen(),
     );
